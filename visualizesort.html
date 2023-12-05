@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="visualizeSort.css">
+    <title>Sorting visualizer</title>
+</head>
+<body>
+    <header>
+        <div id ="header"><h1 color:yellow>Comparison Sorting Algorithms</h1></div>
+    </header>
+    <div id="navbar">
+        <span><button id="rArray" onclick="generate()">Randomized Array</button></span>
+        <span><button id="sSort" onclick="SelectionSort(),disable()">selction sort</button></span>
+        <span><button id="iSort" onclick="InsertionSort(),disable()">Insertion sort</button></span>
+        <span><button id="bSort" onclick="BubbleSort(),disable()">Bubble sort</button></span>
+        <span><button id="mSort" onclick="">Merge sort</button></span>
+        <span><button id="qSort" onclick="QSort(),disable()">Quick sort</button></span>
+        <span><button id="shSort" onclick="ShellSort(),disable()">shell sort</button></span>
+        <span><button id="cSize" onclick="generate()">change size</button></span>
+    </div>
+    <section id="sortName"></section>
+    <canvas id="Canvas"></canvas>
+    
+    <section class="data-container"></section> 
+    <section id="count"></section>
+    <section class="range"></section>
+    <div id="name"></div>
+    <!-- <script src="./mergesort.js"></script> -->
+    <script src="./generateBars.js"></script>
+    <script src="./selectionSort.js"></script>
+    <script src="./insertionSort.js"></script>
+    <script src="./disable.js"></script>
+    <script src="./BubbleSort.js"></script>
+    <script src="./quickSort.js"></script>
+    <script src="./shellSort.js"></script>
+    
+    
+</body>
+</html>
